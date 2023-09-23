@@ -74,7 +74,7 @@ CREATE TABLE transactions (
 try:
     # Execute the SQL query to create the table
     cursor.execute(create_table_query)
-    print("Table 'example_table' created successfully.")
+    print("Table 'finances' created successfully.")
 except mysql.connector.Error as err:
     print(f"Error: {err}")
 finally:
