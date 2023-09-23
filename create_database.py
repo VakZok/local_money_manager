@@ -1,11 +1,12 @@
 import mysql.connector
+import credentials
 
 # MySQL connection configuration
 config = {
-    'user': 'your_username',
-    'password': 'your_password',
-    'host': 'your_host',
-    'database': 'your_database'
+    'user': credentials.user,
+    'password': credentials.password,
+    'host': credentials.host,
+    'database': credentials.database
 }
 
 # Establish a connection to the MySQL server
