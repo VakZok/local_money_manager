@@ -36,7 +36,7 @@ CREATE TABLE transactions (
         'Soziales',
         'Reisen',
         'Bildung',
-        'Abbonements',
+        'Abonnements',
         'Versicherungen',
         'Spenden',
         'Geschenke',
