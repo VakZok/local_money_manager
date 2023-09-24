@@ -19,55 +19,11 @@ cursor = connection.cursor()
 create_table_query = '''
 CREATE TABLE transactions (
     date DATE,
-    description VARCHAR(50),
+    description VARCHAR(100),
     value DOUBLE NOT NULL,
-    main_category VARCHAR(50) NOT NULL,
-    subcategory VARCHAR(50) NOT NULL,
-    PRIMARY KEY (date, description),
-    CHECK (main_category IN (
-        'Transport',
-        'Haus/Wohnung',
-        'Versicherungen',
-        'Lebensmittel',
-        'Gesundheit',
-        'Sport',
-        'Kleidung',
-        'Persönlich',
-        'Soziales',
-        'Reisen',
-        'Bildung',
-        'Abonnements',
-        'Versicherungen',
-        'Spenden',
-        'Geschenke',
-        'Gehalt',
-        'Zinsen/Dividende',
-        'Verkauf'
-    )),
-    CHECK (subcategory IN (
-        'Allgemein',
-        'Auto',
-        'Öffis',
-        'Miete',
-        'Hypothek',
-        'Strom',
-        'Wasser',
-        'Gas',
-        'Möbel',
-        'Krankenversicherung',
-        'Privathaftpflichtversicherung',
-        'Berufsunfähigkeitsversicherung',
-        'Wohngebäudeversicherung',
-        'Kfz_Haftpflichtversicherung',
-        'Zahnzusatzversicherung',
-        'Rechtsschutzversicherung',
-        'Urlaub',
-        'Medikamente',
-        'Vorsorge',
-        'Behandlung',
-        'Sehhilfe',
-        'Mitgliedschaft'
-    ))
+    main_category VARCHAR(100) NOT NULL,
+    subcategory VARCHAR(100) NOT NULL,
+    PRIMARY KEY (date, description)
 )
 '''
 
