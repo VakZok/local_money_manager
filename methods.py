@@ -9,3 +9,5 @@ def convert_date(original_date):
     parsed_date = datetime.strptime(original_date, input_format)
     # Format the parsed date to the output format
     mysql_date = parsed_date.strftime(output_format)
+
+    return mysql_date
