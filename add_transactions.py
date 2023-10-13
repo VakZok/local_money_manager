@@ -18,8 +18,8 @@ cursor = connection.cursor()
 
 # SQL query to insert a new transaction
 insert_transactions_query = '''
-INSERT INTO transactions (date, description, value, main_category, subcategory)
-VALUES (%(date)s, %(description)s, %(value)s, %(main_category)s, %(subcategory)s)
+INSERT INTO transactions (date, description, value, type, main_category, subcategory)
+VALUES (%(date)s, %(description)s, %(value)s, %(type)s, %(main_category)s, %(subcategory)s)
 ON DUPLICATE KEY UPDATE value = %(value)s;
 '''
 
